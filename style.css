@@ -1,0 +1,664 @@
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 800;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 100;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 900;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 500;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 400;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 700;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+      format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+nav {
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 77.5vw;
+  padding-top: 24px;
+}
+
+.section1 {
+  margin-bottom: 70px;
+  background-image: url("assets/images/original.jpg");
+
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
+}
+
+.section1 .box1 {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  opacity: 0.71;
+  background-color: black;
+}
+nav span img {
+  width: 150px;
+}
+.button1 {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 15px;
+}
+
+.button1 button {
+  display: flex;
+  align-items: center;
+  font-family: Netflix Sans;
+  border-radius: 5px;
+  background: #0e0d0d78;
+  color: white;
+  font-weight: 400;
+  padding: 3px 12px;
+  font-size: medium;
+  border: 1px solid rgba(221, 214, 214, 0.384);
+}
+.svg10 {
+  margin: 0 5px 0 0;
+  width: 17px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-image: url(assets/images/lang.svg);
+}
+.svg11 {
+  margin: 0 0 0 10px;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-image: url(assets/images/down\ arrow.svg);
+}
+.button6 {
+  padding: 6px 15px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background: rgb(240, 40, 40);
+  font-family: Netflix Sans;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  line-height: 51px;
+  padding-bottom: 120px;
+  color: white;
+  flex-direction: column;
+}
+.hero span:nth-child(1) {
+  font-weight: 900;
+  font-size: 57px;
+  font-family: Netflix Sans;
+  text-align: center;
+  line-height: normal;
+  padding: 0px 25vw;
+}
+.hero span:nth-child(2) {
+  font-family: Netflix Sans;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+.hero span:nth-child(3) {
+  font-size: 16px;
+  font-family: Netflix Sans;
+  font-weight: 300;
+  text-align: center;
+}
+.button2 {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.button2 input {
+  width: 100%;
+  padding: 18px 165px 18px 20px;
+
+  background-color: rgba(37, 36, 36, 0.747);
+  border: 1px solid rgba(221, 214, 214, 0.384);
+  border-radius: 5px;
+  color: white;
+  font-family: Netflix Sans;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.my-input::placeholder {
+  color: rgb(255 255 255 / 64%);
+}
+.button2 button {
+  background-color: red;
+  color: white;
+  padding: 13px 28px;
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: Netflix Sans;
+}
+.svg9 {
+  background-image: url(assets/images/rightarrow.svg);
+  width: 1em;
+  height: 1em;
+  margin: 0 0px 0 0.3em;
+}
+
+.freq,
+.trend,
+.more {
+  margin: 0em 0.5em;
+  color: white;
+  font-family: Netflix Sans;
+  padding: 0 9em;
+}
+
+.grid {
+  overflow: hidden;
+  justify-content: center;
+  padding-left: 170px;
+  margin: 24px 0 65px 0;
+  width: 88vw;
+  gap: 45px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+[class^="cards"] {
+  cursor: pointer;
+  border-radius: 7px;
+  transition: transform 0.3s ease;
+}
+.cards-wed:hover,
+.cards-kapil:hover,
+.cards-raid:hover,
+.cards-squid:hover,
+.cards-mandala:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+
+.cards-wed {
+  height: 38vh;
+  width: 13vw;
+  background-image: url(assets/images/1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cards-kapil {
+  height: 38vh;
+  width: 13vw;
+  background-image: url(assets/images/2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cards-raid {
+  width: 13vw;
+  height: 38vh;
+  background-image: url(assets/images/3.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cards-squid {
+  width: 13vw;
+  height: 38vh;
+  background-image: url(assets/images/4.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cards-mandala {
+  width: 7.5vw;
+  height: 38vh;
+  background-image: url(assets/images/55555.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cards-arrow {
+  width: 24px;
+  position: relative;
+  right: 10px;
+  margin: auto -25px;
+  cursor: pointer;
+  height: 118px;
+  background-color: #282727cc;
+}
+.cards-arrow:hover {
+  background-color: rgb(85, 84, 84);
+}
+
+.symbol {
+  height: 26px;
+  width: 22px;
+  position: relative;
+  top: 50px;
+  background-color: rgb(255 255 255);
+  clip-path: path(
+    "M 15.5859 12 L 8.29303 19.2928 L 9.70725 20.7071 L 17.7072 12.7071 C 17.8948 12.5195 18.0001 12.2652 18.0001 12 C 18.0001 11.7347 17.8948 11.4804 17.7072 11.2928 L 9.70724 3.29285 L 8.29303 4.70706 L 15.5859 12 Z"
+  );
+}
+.num-bor {
+  position: absolute;
+  z-index: 2;
+}
+.one {
+  position: relative;
+}
+.ffff {
+  font-family: Netflix Sans;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.number {
+  top: 120px;
+  display: flex;
+  right: 26px;
+  font-family: Netflix Sans;
+  cursor: pointer;
+  line-height: 1;
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  font-size: 110px;
+  font-weight: 700;
+  color: rgb(65, 65, 65);
+  -webkit-text-stroke: 0.25rem rgb(255, 255, 255);
+  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.number::before {
+  content: attr(data-content);
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0;
+  position: absolute;
+}
+
+.flex {
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  margin: 0 1em;
+  padding-bottom: 7em;
+  position: relative;
+  height: 315px;
+  width: 253px;
+  border-radius: 15px;
+  color: white;
+  font-family: Netflix Sans;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+}
+.box h2 {
+  padding: 23px 17px 18px;
+}
+.box p {
+  padding: 0 17px;
+  opacity: 0.69;
+  word-wrap: normal;
+}
+.svg {
+  background-image: url(assets/images/tv.svg);
+  position: absolute;
+  right: 10px;
+  width: 72px;
+  height: 72px;
+  bottom: 15px;
+}
+.svg2 {
+  background-image: url(assets/images/download.svg);
+  position: absolute;
+  right: 10px;
+  width: 72px;
+  height: 72px;
+  bottom: 15px;
+}
+.svg3 {
+  background-image: url(assets/images/watch.svg);
+  position: absolute;
+  right: 10px;
+  width: 72px;
+  height: 72px;
+  bottom: 15px;
+}
+.svg4 {
+  background-image: url(assets/images/kids.svg);
+  position: absolute;
+  right: 10px;
+  width: 72px;
+  height: 72px;
+  bottom: 15px;
+}
+.flex2 {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.container {
+  cursor: pointer;
+  padding: 25px 25px;
+  height: auto;
+  background: #2c2a2a;
+  width: 77.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container:hover {
+  background: #383737;
+}
+.container h2 {
+  color: white;
+  font-family: Netflix Sans;
+  font-weight: 400;
+}
+.svg5 {
+  background-image: url(assets/images/plus.svg);
+  height: 35px;
+  width: 35px;
+}
+.end h4 {
+  padding: 5em 0px 1em;
+  margin: 0em 2em;
+  color: white;
+  font-family: Netflix Sans;
+  text-align: center;
+  font-weight: 400;
+}
+.button3 {
+  flex-wrap: wrap;
+  margin: 0em 6em;
+  gap: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button3 input {
+  max-width: 100%;
+  background: #0e0d0d;
+  border: 1px solid rgba(221, 214, 214, 0.384);
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 5px;
+  color: white;
+  /* padding: 18px 330px 18px 15px; */
+  padding: 1em 19em 1em 1em;
+}
+
+.button3 button {
+  display: flex;
+  align-items: center;
+  /* padding: 15px 55px; */
+  background-color: #ff0000e3;
+  color: white;
+  padding: 13px 30px 13px 30px;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: Netflix Sans;
+}
+.svg6 {
+  margin: -4px 0px;
+  background-image: url(assets/images/rightarrow.svg);
+  width: 24px;
+  height: 24px;
+}
+.help {
+  opacity: 0.74;
+  color: white;
+  padding: 80px 145px 45px;
+  font-family: Netflix Sans;
+}
+.help span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.flex3 {
+  row-gap: 15px;
+  display: grid;
+  padding: 0 145px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.flex3 li {
+  opacity: 0.74;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+  list-style-type: none;
+  font-family: Netflix Sans;
+  font-size: 0.99em;
+}
+.button4 {
+  padding: 86px 145px 0px;
+}
+.button4 button {
+  font-weight: 400;
+  padding: 3px 12px;
+  font-size: medium;
+  border-radius: 5px;
+  border: 1px solid rgba(221, 214, 214, 0.384);
+  font-family: Netflix Sans;
+  background: #0e0d0d;
+  color: white;
+  display: flex;
+}
+.svg7 {
+  margin: 2px 7px 0;
+
+  background-image: url(assets/images/lang.svg);
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+.svg8 {
+  margin: 2px 0px 4px 6px;
+
+  background-image: url(assets/images/down\ arrow.svg);
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+.netflix {
+  font-family: Netflix Sans;
+  color: white;
+  font-weight: 100;
+  opacity: 0.86;
+  font-size: 14px;
+  padding: 38px 142px;
+}
+.page {
+  padding: 0 142px 160px;
+  font-size: smaller;
+  font-family: Netflix Sans;
+  opacity: 0.5;
+  color: white;
+  font-weight: 400;
+}
+.page a {
+  cursor: pointer;
+  color: #5a86ff;
+}
+@media (max-width: 1190px) {
+  .hero span:nth-child(2) {
+    font-size: 0.99em;
+  }
+  .hero span:nth-child(1) {
+    font-size: 2.9em;
+  }
+  .freq,
+  .trend,
+  .more {
+    padding: 0em 8.5em;
+  }
+  .box {
+    height: 220px;
+    width: 414px;
+  }
+  .flex3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 960px) {
+  .box {
+    height: 230px;
+    width: 885px;
+  }
+  .freq,
+  .trend,
+  .more {
+    padding: 0em 6.8em;
+  }
+  .section5 {
+    margin: 0 0 0em -4em;
+  }
+
+  .flex3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .button2 button {
+    padding: 17px 12px;
+    font-size: large;
+  }
+}
+@media (max-width: 600px) {
+  .button3 button {
+    font-size: large;
+  }
+  .button3 input {
+    padding: 1em 10em 1em 1em;
+  }
+  .container h2 {
+    font-size: 1em;
+  }
+  .freq,
+  .trend,
+  .more {
+    font-size: 0.8em;
+    padding: 0em 4.2em;
+  }
+  .section5 {
+    margin: 0 0 0em -6em;
+  }
+
+  .flex3 {
+    grid-template-columns: 1fr;
+  }
+  .button2 input {
+    padding: 1rem 24em 1rem 1em;
+  }
+  .button2 button {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 420px) {
+  .box {
+    height: auto;
+  }
+  .button2 input {
+    padding: 1rem 0em 1rem 1em;
+  }
+  .button3 input {
+    padding: 1em 5em 1em 1em;
+  }
+}
+@media (max-width: 300px) {
+  .freq,
+  .trend,
+  .more {
+    padding: 0em 1.5em;
+  }
+}
